@@ -131,7 +131,6 @@ a {
 
 .description {
     max-width: 600px;
-    padding-top: 20px;
 }
 
 .description p {
@@ -139,6 +138,9 @@ a {
 }
 
 @media (min-width:768px) {
+    .description {
+        padding-top: 20px;
+    }
     .description p {
         font-size: 25px;
     }
@@ -273,7 +275,7 @@ a {
 .box .box-content .description {
     text-transform: capitalize;
     text-align: left;
-    font-size: .8rem;
+    font-size: .5rem;
 }
 
 @media (min-width: 768px) {
@@ -340,8 +342,22 @@ a {
 }
 
 .icons-footer {
-    display: flex;
-    justify-content: center;
+    display: block;
+    padding-left: 0;
+}
+
+.none {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .icons-footer {
+        display: flex;
+        justify-content: center;
+    }
+    .none {
+        display: inline;
+    }
 }
 
 .icons-footer li a {
@@ -357,6 +373,13 @@ a {
 
 .correo p {
     margin-bottom: 0;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .correo p {
+        font-size: 1rem;
+    }
 }
 
 .icons-footer li a p {
